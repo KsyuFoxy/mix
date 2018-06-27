@@ -1,0 +1,41 @@
+// 1. CSS nested structures are forbidden
+// 2. Only .BLOCK__ELEMENT, .BLOCK--modifier, .BLOCK__ELEMENT--modifier classes are allowed (BLOCK__ELEMENT1__ELEMENT2 is wrong)
+// 3. HTML nestings should not be repeated in SCSS nesting (use BLOCK in BLOCK with unique Block names)
+// Check FAQ:  http://getbem.com/faq/
+
+.custom-button {
+  display: block;
+  background-color: green;
+  color: white;
+  &--disabled {
+    background-color: grey;
+  }
+  &__first-line {
+    font-size: 15px;
+    color: yellow;
+  }
+
+  &__second-line {
+    font-size: 15px;
+  }
+    &__separator {
+      border-bottom: 1px solid white;
+      margin: 5px 0;
+  }
+}
+
+
+.custom-panel {
+  background-color: antiquewhite;
+
+  &__title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+
+  }
+}

@@ -1,0 +1,26 @@
+.custom-button {
+  display: block;
+  background-color: green;
+  color: white; }
+  .custom-button--disabled {
+    background-color: grey; }
+  .custom-button__first-line {
+    font-size: 15px;
+    color: yellow; }
+  .custom-button__second-line {
+    font-size: 15px; }
+  .custom-button__separator {
+    border-bottom: 1px solid white;
+    margin: 5px 0; }
+
+.custom-panel {
+  background-color: antiquewhite; }
+  .custom-panel__title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold; }
+  .custom-panel__content {
+    display: flex;
+    justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */
