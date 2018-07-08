@@ -1,0 +1,25 @@
+{
+  "name": "website-content-module",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.1.0",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^2.1.11",
+    "svg-spritemap-webpack-plugin": "1.1.0",
+    "swipe-js-iso": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "develop": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "preinstall": "npm prune",
+    "prod": "npm run production",
+    "preproduction": "npm install",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^0.6.1"
+  }
+}
